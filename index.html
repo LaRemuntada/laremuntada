@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="La Remuntada - Una web dedicada al món del futbol amb notícies, estadístiques i opinions">
+    <meta name="keywords" content="futbol, la remuntada, esports, notícies, estadístiques">
+    <meta name="author" content="La Remuntada">
+    <link rel="icon" href="./assests/logo.png" type="image/x-icon">
+    <title>La Remuntada</title>
+</head>
+
+<header class="site-header">
+
+    <div class="header-container">
+        <h1 class="site-title">La REMUNTADA</h1> 
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+    <body>
+    <div class="banner">
+        <img src="./assests/banner.png" alt="Banner de La Remuntada">
+    </div>
+
+    <main>
+        <section id="Qui-som?" class="Qui-som">
+            <div class="qui-som-container">
+            <div class="sergirobertofoto">
+                <img src="./assests/sergiroberto.png" alt="Foto de Sergi Roberto despres de marcar el 6-1 contra el PSG">
+            </div>
+            <div class="text-qui-som">
+            <h2 class="titolseccio">QUI SOM?</h2>
+            <p>8 de març de 2017: minut 90+5 de la segona part, el partit està a punt d'acabar i el PSG es qualificarà per la següent ronda de Champions. Després del rebuig d'una falta, una centrada de Neymar es troba amb peu dret Sergi Roberto i aquest l'envia al fons de la xarxa. D'aquesta manera naixia<strong>'' LA REMUNTADA''</strong>  que canviaria la manera de viure el futbol a tot arreu. Nosaltres, amb el mateix propòsit hem començat aquest projecte: portar-te notícies, històries i informació atemporal sobre el futbol. Volem oferir-te una nova mirada, un valor afegit que transcendeixi el joc i et connecti amb la seva essència. Aquí, el futbol és més que un esport; és una forma de viure. </p>
+        </div>
+            </div>
+        </section>
+        <section id="noticies-recents" class="noticiesrecents">
+            <div class="noticiescontainerindex">
+                <h2 class="titolnoticies">Notícies recents</h2>
+                <!-- Contenidor principal -->
+                <div class="carousel-container">
+                    <!-- Botons de navegació fora del carrusel -->
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="carousel">
+                        <!-- Notícia 1 -->
+                        <div class="carousel-item">
+                            <a href="./articles/barbastro.html">
+                                <img src="./assests/Barbastroportada.png" alt="Notícia 1">
+                            </a>
+                        </div>
+                        <!-- Notícia 2 -->
+                        <div class="carousel-item">
+                            <a href="./articles/supercopa.html">
+                                <img src="./assests/PortadaSupercopa.png" alt="Notícia 2">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./articles/barbastro.html">
+                                <img src="./assests/Barbastroportada.png" alt="Notícia 3">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./articles/supercopa.html">
+                                <img src="./assests/PortadaSupercopa.png" alt="Notícia 4">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        
+        <h2 class="titolnoticies">Segueix-nos a Twitter</h2>
+        <h1 class="subtexttwitter">Fes click al logo* </h1>
+        <a href="https://x.com/La_Remuntada" class="twitter-link" target="_blank" aria-label="Twitter">
+    <img class="twitter-icon" src="./assests/X-Logo.png" alt="Twitter Logo" class="twitter-icon">
+        </a>
+    </main>
+
+    <footer>
+        <p class="textfooter">&copy; 2024 La Remuntada. Tots els drets reservats. Pàgina web disenyada per Sergi Escarré</p>
+        
+    </footer>
+</body>
+
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #00ff8a;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+/* Barra de navegación */
+.site-nav ul {
+    display: flex;           /* Mostrar los enlaces en fila */
+    list-style: none;        /* Eliminar los puntos de la lista */
+}
+
+.site-nav li {
+    margin-left: 20px;       /* Espacio entre los elementos de la lista */
+}
+
+.site-nav a {
+    text-decoration: none;   /* Eliminar el subrayado */
+    font-size: 1.1rem;       /* Tamaño de la fuente */
+    color: #000000;             /* Color de los enlaces */
+    transition: color 0.3s ease; /* Efecto de transición para hover */
+}
+
+/* Contenedor principal del header */
+.site-header {
+    background-color: #00ff8a;  /* Fondo blanco */
+    padding: 20px 40px;      /* Espaciado alrededor */
+    margin: 0;
+}
+
+/* Contenedor que agrupa el título y la nav */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Espai entre el títol i el nav */
+    align-items: center;           /* Centrat vertical dels elements */
+    margin: 0;
+    gap: 10px;    
+}
+
+/* Título de la web */
+.site-title {
+    font-size: 2rem;         /* Tamaño de la fuente del título */
+    font-weight: bold;       /* Poner en negrita */
+    color: #000000;
+    padding: 0;            
+}
+/* Estilos para el banner */
+.banner {
+    width: 100%;            /* Asegura que el banner ocupe todo el ancho */
+    max-height: 500px;      /* Altura máxima de 500px */
+    overflow: hidden;       /* Elimina cualquier contenido que exceda la altura */
+}
+
+.banner img {
+    width: 100%;            /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;           /* Ajusta la altura proporcionalmente */
+}
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .qui-som-container {
+        flex-direction: column;
+    }
+
+    .sergirobertofoto img {
+        width: 100%;
+    }
+
+    .titolseccio, .titolnoticies {
+        font-size: 2.5rem;
+    }
+
+    .article-content {
+        padding: 10px;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        padding: 10px 20px;
+    }
+
+    .site-title {
+        font-size: 1.2rem;
+    }
+
+    .site-nav a {
+        font-size: 1rem;
+    }
+
+    .titolseccio, .titolnoticies {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
